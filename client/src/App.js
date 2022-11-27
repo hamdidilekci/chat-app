@@ -1,10 +1,14 @@
 import './App.css';
+import ChatForm from './components/ChatForm';
+import ChatList from './components/ChatList';
+import { ChatProvider } from './context/ChatContext';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <ChatProvider>
+      <ChatForm/>
+      <ChatList/>
+    </ChatProvider>
   );
 }
 
