@@ -6,8 +6,10 @@ import { ChatProvider } from './context/ChatContext';
 function App() {
   return (
     <ChatProvider>
-      <ChatForm/>
-      <ChatList/>
+      <div className='App'>
+        <ChatList/>
+        <ChatForm/>
+      </div>
     </ChatProvider>
   );
 }
