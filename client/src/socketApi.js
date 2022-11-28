@@ -20,7 +20,6 @@ export const subscribeChat = (cb) => {
     if(!socket) return;
 
     socket.on('receive-message', (message) => {
-        console.log('yeni mesaj', message);
         cb(message);
     });
 };
@@ -29,7 +28,6 @@ export const subscribeInitialMessages = (cb) => {
     if(!socket) return;
 
     socket.on('message-list', (messages) => {
-        console.log('Initial', messages);
         cb(messages);
     });
 };
