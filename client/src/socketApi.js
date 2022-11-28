@@ -17,7 +17,9 @@ export const sendMessage = (message) => {
 };
 
 export const subscribeChat = () => {
-    if(socket) socket.on('receive-message', (message) => {
-        console.log(message)
-    })
-}
+    if(!socket) return;
+
+    socket.on('receive-message', (message) => {
+        console.log('yeni mesaj', message);
+    });
+};
