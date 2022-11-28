@@ -5,7 +5,8 @@ import ChatItem from './ChatItem';
 import styles from './styles.module.css';
 
 function ChatList() {
-    const { messages } = useChat()
+    const { messages } = useChat();
+
     return (
         <div className={styles.chatlist}>
             <div>
@@ -14,7 +15,7 @@ function ChatList() {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ChatList
+export default ChatList;

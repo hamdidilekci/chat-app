@@ -16,7 +16,8 @@ function ChatForm() {
 
         sendMessage(message);
         setMessage('');
-    }
+    };
+    
     return (
         <div>
             <form onSubmit={handleSubmit}>
